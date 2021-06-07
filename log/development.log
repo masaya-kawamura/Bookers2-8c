@@ -26215,3 +26215,1187 @@ Processing by GroupsController#index as HTML
 Completed 200 OK in 137ms (Views: 134.1ms | ActiveRecord: 0.5ms)
 
 
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ bin/rails:9
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+Started GET "/" for 27.139.43.99 at 2021-06-06 22:17:47 +0000
+Cannot render console from 27.139.43.99! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (6.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.6/lib/active_record/log_subscriber.rb:98
+Processing by HomesController#top as HTML
+  Rendering homes/top.html.erb within layouts/application
+  Rendered homes/top.html.erb within layouts/application (3.1ms)
+  Rendered layouts/_header.html.erb (3.8ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 1135ms (Views: 1112.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 27.139.43.99 at 2021-06-06 22:17:53 +0000
+Cannot render console from 27.139.43.99! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomesController#top as HTML
+  Rendering homes/top.html.erb within layouts/application
+  Rendered homes/top.html.erb within layouts/application (0.6ms)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/_header.html.erb:10
+  Rendered layouts/_header.html.erb (30.4ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 141ms (Views: 138.9ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/users/sign_in" for 27.139.43.99 at 2021-06-06 22:17:56 +0000
+Cannot render console from 27.139.43.99! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#new as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.6/lib/active_record/log_subscriber.rb:98
+Redirected to https://7d0ee2c198f5476cbb69bdd91b6647a9.vfs.cloud9.us-east-1.amazonaws.com/users/1
+Filter chain halted as :require_no_authentication rendered or redirected
+Completed 302 Found in 23ms (ActiveRecord: 0.1ms)
+
+
+Started GET "/users/1" for 27.139.43.99 at 2021-06-06 22:17:57 +0000
+Cannot render console from 27.139.43.99! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.6/lib/active_record/log_subscriber.rb:98
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:5
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "books" WHERE "books"."user_id" = ? AND "books"."created_at" BETWEEN ? AND ?[0m  [["user_id", 1], ["created_at", "2021-06-05 00:00:00"], ["created_at", "2021-06-05 23:59:59.999999"]]
+  ↳ app/controllers/users_controller.rb:80
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "books" WHERE "books"."user_id" = ? AND (created_at >= '2021-06-06')[0m  [["user_id", 1]]
+  ↳ app/controllers/users_controller.rb:83
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM "books" WHERE "books"."user_id" = ? AND "books"."created_at" BETWEEN ? AND ?[0m  [["user_id", 1], ["created_at", "2021-06-05 00:00:00"], ["created_at", "2021-06-05 23:59:59.999999"]]
+  ↳ app/controllers/users_controller.rb:83
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "books" WHERE "books"."user_id" = ? AND "books"."created_at" BETWEEN ? AND ?[0m  [["user_id", 1], ["created_at", "2021-05-24 00:00:00"], ["created_at", "2021-05-30 23:59:59.999999"]]
+  ↳ app/controllers/users_controller.rb:80
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "books" WHERE "books"."user_id" = ? AND "books"."created_at" BETWEEN ? AND ?[0m  [["user_id", 1], ["created_at", "2021-05-31 00:00:00"], ["created_at", "2021-06-06 23:59:59.999999"]]
+  ↳ app/controllers/users_controller.rb:81
+  Rendering users/show.html.erb within layouts/application
+  Rendered searches/_search.html.erb (15.8ms)
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "users" INNER JOIN "relationships" ON "users"."id" = "relationships"."followed_id" WHERE "relationships"."follower_id" = ?[0m  [["follower_id", 1]]
+  ↳ app/views/users/_info.html.erb:13
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "users" INNER JOIN "relationships" ON "users"."id" = "relationships"."follower_id" WHERE "relationships"."followed_id" = ?[0m  [["followed_id", 1]]
+  ↳ app/views/users/_info.html.erb:17
+  Rendered users/_info.html.erb (31.0ms)
+  Rendered layouts/_errors.html.erb (0.4ms)
+  Rendered books/_form.html.erb (12.1ms)
+  [1m[36mBook Load (0.1ms)[0m  [1m[34mSELECT "books".* FROM "books" WHERE "books"."user_id" = ?[0m  [["user_id", 1]]
+  ↳ app/views/books/_table.html.erb:1
+  [1m[36mFavorite Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "favorites" WHERE "favorites"."book_id" = ? AND "favorites"."user_id" = ? LIMIT ?[0m  [["book_id", 11], ["user_id", 1], ["LIMIT", 1]]
+  ↳ app/models/book.rb:11
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "favorites" WHERE "favorites"."book_id" = ?[0m  [["book_id", 11]]
+  ↳ app/views/favorites/_favorite.html.erb:7
+  Rendered favorites/_favorite.html.erb (12.1ms)
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "comments" WHERE "comments"."book_id" = ?[0m  [["book_id", 11]]
+  ↳ app/views/books/_table.html.erb:12
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(DISTINCT "impressions"."session_hash") FROM "impressions" WHERE "impressions"."impressionable_id" = ? AND "impressions"."impressionable_type" = ?[0m  [["impressionable_id", 11], ["impressionable_type", "Book"]]
+  ↳ app/views/books/_table.html.erb:13
+  [1m[36mFavorite Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "favorites" WHERE "favorites"."book_id" = ? AND "favorites"."user_id" = ? LIMIT ?[0m  [["book_id", 12], ["user_id", 1], ["LIMIT", 1]]
+  ↳ app/models/book.rb:11
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "favorites" WHERE "favorites"."book_id" = ?[0m  [["book_id", 12]]
+  ↳ app/views/favorites/_favorite.html.erb:7
+  Rendered favorites/_favorite.html.erb (2.2ms)
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "comments" WHERE "comments"."book_id" = ?[0m  [["book_id", 12]]
+  ↳ app/views/books/_table.html.erb:12
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(DISTINCT "impressions"."session_hash") FROM "impressions" WHERE "impressions"."impressionable_id" = ? AND "impressions"."impressionable_type" = ?[0m  [["impressionable_id", 12], ["impressionable_type", "Book"]]
+  ↳ app/views/books/_table.html.erb:13
+  [1m[36mFavorite Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "favorites" WHERE "favorites"."book_id" = ? AND "favorites"."user_id" = ? LIMIT ?[0m  [["book_id", 13], ["user_id", 1], ["LIMIT", 1]]
+  ↳ app/models/book.rb:11
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "favorites" WHERE "favorites"."book_id" = ?[0m  [["book_id", 13]]
+  ↳ app/views/favorites/_favorite.html.erb:7
+  Rendered favorites/_favorite.html.erb (3.8ms)
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "comments" WHERE "comments"."book_id" = ?[0m  [["book_id", 13]]
+  ↳ app/views/books/_table.html.erb:12
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(DISTINCT "impressions"."session_hash") FROM "impressions" WHERE "impressions"."impressionable_id" = ? AND "impressions"."impressionable_type" = ?[0m  [["impressionable_id", 13], ["impressionable_type", "Book"]]
+  ↳ app/views/books/_table.html.erb:13
+  Rendered books/_table.html.erb (60.5ms)
+  Rendered books/_index.html.erb (62.2ms)
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM "books" WHERE "books"."user_id" = ? AND (created_at >= '2021-06-06')[0m  [["user_id", 1]]
+  ↳ app/views/users/show.html.erb:22
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM "books" WHERE "books"."user_id" = ? AND "books"."created_at" BETWEEN ? AND ?[0m  [["user_id", 1], ["created_at", "2021-06-05 00:00:00"], ["created_at", "2021-06-05 23:59:59.999999"]]
+  ↳ app/views/users/show.html.erb:23
+  [1m[35mCACHE  (0.4ms)[0m  [1m[34mSELECT COUNT(*) FROM "books" WHERE "books"."user_id" = ? AND "books"."created_at" BETWEEN ? AND ?[0m  [["user_id", 1], ["created_at", "2021-05-31 00:00:00"], ["created_at", "2021-06-06 23:59:59.999999"]]
+  ↳ app/views/users/show.html.erb:34
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM "books" WHERE "books"."user_id" = ? AND "books"."created_at" BETWEEN ? AND ?[0m  [["user_id", 1], ["created_at", "2021-05-24 00:00:00"], ["created_at", "2021-05-30 23:59:59.999999"]]
+  ↳ app/views/users/show.html.erb:35
+  [1m[35m (3.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "books" WHERE "books"."user_id" = ? AND "books"."created_at" BETWEEN ? AND ?[0m  [["user_id", 1], ["created_at", "2021-05-31 00:00:00"], ["created_at", "2021-05-31 23:59:59.999999"]]
+  ↳ app/views/users/show.html.erb:53
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "books" WHERE "books"."user_id" = ? AND "books"."created_at" BETWEEN ? AND ?[0m  [["user_id", 1], ["created_at", "2021-06-01 00:00:00"], ["created_at", "2021-06-01 23:59:59.999999"]]
+  ↳ app/views/users/show.html.erb:54
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "books" WHERE "books"."user_id" = ? AND "books"."created_at" BETWEEN ? AND ?[0m  [["user_id", 1], ["created_at", "2021-06-02 00:00:00"], ["created_at", "2021-06-02 23:59:59.999999"]]
+  ↳ app/views/users/show.html.erb:55
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "books" WHERE "books"."user_id" = ? AND "books"."created_at" BETWEEN ? AND ?[0m  [["user_id", 1], ["created_at", "2021-06-03 00:00:00"], ["created_at", "2021-06-03 23:59:59.999999"]]
+  ↳ app/views/users/show.html.erb:56
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "books" WHERE "books"."user_id" = ? AND "books"."created_at" BETWEEN ? AND ?[0m  [["user_id", 1], ["created_at", "2021-06-04 00:00:00"], ["created_at", "2021-06-04 23:59:59.999999"]]
+  ↳ app/views/users/show.html.erb:57
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM "books" WHERE "books"."user_id" = ? AND "books"."created_at" BETWEEN ? AND ?[0m  [["user_id", 1], ["created_at", "2021-06-05 00:00:00"], ["created_at", "2021-06-05 23:59:59.999999"]]
+  ↳ app/views/users/show.html.erb:58
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "books" WHERE "books"."user_id" = ? AND "books"."created_at" BETWEEN ? AND ?[0m  [["user_id", 1], ["created_at", "2021-06-06 00:00:00"], ["created_at", "2021-06-06 23:59:59.999999"]]
+  ↳ app/views/users/show.html.erb:59
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM "books" WHERE "books"."user_id" = ? AND "books"."created_at" BETWEEN ? AND ?[0m  [["user_id", 1], ["created_at", "2021-05-31 00:00:00"], ["created_at", "2021-05-31 23:59:59.999999"]]
+  ↳ app/views/users/show.html.erb:73
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM "books" WHERE "books"."user_id" = ? AND "books"."created_at" BETWEEN ? AND ?[0m  [["user_id", 1], ["created_at", "2021-06-01 00:00:00"], ["created_at", "2021-06-01 23:59:59.999999"]]
+  ↳ app/views/users/show.html.erb:73
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM "books" WHERE "books"."user_id" = ? AND "books"."created_at" BETWEEN ? AND ?[0m  [["user_id", 1], ["created_at", "2021-06-02 00:00:00"], ["created_at", "2021-06-02 23:59:59.999999"]]
+  ↳ app/views/users/show.html.erb:73
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM "books" WHERE "books"."user_id" = ? AND "books"."created_at" BETWEEN ? AND ?[0m  [["user_id", 1], ["created_at", "2021-06-03 00:00:00"], ["created_at", "2021-06-03 23:59:59.999999"]]
+  ↳ app/views/users/show.html.erb:73
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM "books" WHERE "books"."user_id" = ? AND "books"."created_at" BETWEEN ? AND ?[0m  [["user_id", 1], ["created_at", "2021-06-04 00:00:00"], ["created_at", "2021-06-04 23:59:59.999999"]]
+  ↳ app/views/users/show.html.erb:73
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM "books" WHERE "books"."user_id" = ? AND "books"."created_at" BETWEEN ? AND ?[0m  [["user_id", 1], ["created_at", "2021-06-05 00:00:00"], ["created_at", "2021-06-05 23:59:59.999999"]]
+  ↳ app/views/users/show.html.erb:73
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM "books" WHERE "books"."user_id" = ? AND "books"."created_at" BETWEEN ? AND ?[0m  [["user_id", 1], ["created_at", "2021-06-06 00:00:00"], ["created_at", "2021-06-06 23:59:59.999999"]]
+  ↳ app/views/users/show.html.erb:73
+  Rendered users/show.html.erb within layouts/application (166.9ms)
+  Rendered layouts/_header.html.erb (0.8ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 361ms (Views: 292.0ms | ActiveRecord: 9.5ms)
+
+
+Started GET "/users" for 27.139.43.99 at 2021-06-06 22:18:07 +0000
+Cannot render console from 27.139.43.99! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.6/lib/active_record/log_subscriber.rb:98
+  Rendering users/index.html.erb within layouts/application
+  Rendered searches/_search.html.erb (1.3ms)
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "users" INNER JOIN "relationships" ON "users"."id" = "relationships"."followed_id" WHERE "relationships"."follower_id" = ?[0m  [["follower_id", 1]]
+  ↳ app/views/users/_info.html.erb:13
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "users" INNER JOIN "relationships" ON "users"."id" = "relationships"."follower_id" WHERE "relationships"."followed_id" = ?[0m  [["followed_id", 1]]
+  ↳ app/views/users/_info.html.erb:17
+  Rendered users/_info.html.erb (9.3ms)
+  Rendered layouts/_errors.html.erb (1.3ms)
+  Rendered books/_form.html.erb (3.7ms)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/_index.html.erb:10
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM "users" INNER JOIN "relationships" ON "users"."id" = "relationships"."followed_id" WHERE "relationships"."follower_id" = ?[0m  [["follower_id", 1]]
+  ↳ app/views/users/_index.html.erb:14
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM "users" INNER JOIN "relationships" ON "users"."id" = "relationships"."follower_id" WHERE "relationships"."followed_id" = ?[0m  [["followed_id", 1]]
+  ↳ app/views/users/_index.html.erb:15
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "users" INNER JOIN "relationships" ON "users"."id" = "relationships"."followed_id" WHERE "relationships"."follower_id" = ?[0m  [["follower_id", 2]]
+  ↳ app/views/users/_index.html.erb:14
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "users" INNER JOIN "relationships" ON "users"."id" = "relationships"."follower_id" WHERE "relationships"."followed_id" = ?[0m  [["followed_id", 2]]
+  ↳ app/views/users/_index.html.erb:15
+  [1m[36mUser Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "users" INNER JOIN "relationships" ON "users"."id" = "relationships"."followed_id" WHERE "relationships"."follower_id" = ? AND "users"."id" = ? LIMIT ?[0m  [["follower_id", 1], ["id", 2], ["LIMIT", 1]]
+  ↳ app/models/user.rb:46
+  Rendered users/_index.html.erb (17.9ms)
+  Rendered users/index.html.erb within layouts/application (40.6ms)
+  Rendered layouts/_header.html.erb (0.8ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 202ms (Views: 197.2ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/groups/new" for 27.139.43.99 at 2021-06-06 22:18:09 +0000
+Cannot render console from 27.139.43.99! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by GroupsController#new as HTML
+  Parameters: {"expect"=>[:destroy]}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.6/lib/active_record/log_subscriber.rb:98
+  Rendering groups/new.html.erb within layouts/application
+  Rendered layouts/_errors.html.erb (0.6ms)
+  Rendered groups/_form.html.erb (11.8ms)
+  Rendered groups/new.html.erb within layouts/application (16.4ms)
+  Rendered layouts/_header.html.erb (13.0ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 237ms (Views: 216.2ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/users" for 27.139.43.99 at 2021-06-07 03:10:52 +0000
+Cannot render console from 27.139.43.99! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.6/lib/active_record/log_subscriber.rb:98
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.6/lib/active_record/log_subscriber.rb:98
+  Rendering users/index.html.erb within layouts/application
+  Rendered searches/_search.html.erb (7.4ms)
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "users" INNER JOIN "relationships" ON "users"."id" = "relationships"."followed_id" WHERE "relationships"."follower_id" = ?[0m  [["follower_id", 1]]
+  ↳ app/views/users/_info.html.erb:13
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "users" INNER JOIN "relationships" ON "users"."id" = "relationships"."follower_id" WHERE "relationships"."followed_id" = ?[0m  [["followed_id", 1]]
+  ↳ app/views/users/_info.html.erb:17
+  Rendered users/_info.html.erb (448.6ms)
+  Rendered layouts/_errors.html.erb (0.3ms)
+  Rendered books/_form.html.erb (7.9ms)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/_index.html.erb:10
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM "users" INNER JOIN "relationships" ON "users"."id" = "relationships"."followed_id" WHERE "relationships"."follower_id" = ?[0m  [["follower_id", 1]]
+  ↳ app/views/users/_index.html.erb:14
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM "users" INNER JOIN "relationships" ON "users"."id" = "relationships"."follower_id" WHERE "relationships"."followed_id" = ?[0m  [["followed_id", 1]]
+  ↳ app/views/users/_index.html.erb:15
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "users" INNER JOIN "relationships" ON "users"."id" = "relationships"."followed_id" WHERE "relationships"."follower_id" = ?[0m  [["follower_id", 2]]
+  ↳ app/views/users/_index.html.erb:14
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "users" INNER JOIN "relationships" ON "users"."id" = "relationships"."follower_id" WHERE "relationships"."followed_id" = ?[0m  [["followed_id", 2]]
+  ↳ app/views/users/_index.html.erb:15
+  [1m[36mUser Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "users" INNER JOIN "relationships" ON "users"."id" = "relationships"."followed_id" WHERE "relationships"."follower_id" = ? AND "users"."id" = ? LIMIT ?[0m  [["follower_id", 1], ["id", 2], ["LIMIT", 1]]
+  ↳ app/models/user.rb:46
+  Rendered users/_index.html.erb (16.2ms)
+  Rendered users/index.html.erb within layouts/application (490.4ms)
+  Rendered layouts/_header.html.erb (0.8ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 819ms (Views: 773.1ms | ActiveRecord: 2.2ms)
+
+
+Started GET "/groups" for 27.139.43.99 at 2021-06-07 03:41:52 +0000
+Cannot render console from 27.139.43.99! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by GroupsController#index as HTML
+  Parameters: {"expect"=>[:destroy]}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.6/lib/active_record/log_subscriber.rb:98
+  Rendering groups/index.html.erb within layouts/application
+  Rendered layouts/_errors.html.erb (0.3ms)
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "users" INNER JOIN "relationships" ON "users"."id" = "relationships"."followed_id" WHERE "relationships"."follower_id" = ?[0m  [["follower_id", 1]]
+  ↳ app/views/users/_info.html.erb:13
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "users" INNER JOIN "relationships" ON "users"."id" = "relationships"."follower_id" WHERE "relationships"."followed_id" = ?[0m  [["followed_id", 1]]
+  ↳ app/views/users/_info.html.erb:17
+  Rendered users/_info.html.erb (10.6ms)
+  Rendered layouts/_errors.html.erb (0.0ms)
+  Rendered books/_form.html.erb (3.5ms)
+  [1m[36mGroup Load (0.2ms)[0m  [1m[34mSELECT "groups".* FROM "groups"[0m
+  ↳ app/views/groups/index.html.erb:22
+  Rendered groups/index.html.erb within layouts/application (28.0ms)
+  Rendered layouts/_header.html.erb (1.4ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 147ms (Views: 138.6ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/attachments/383778b871cf8a05d1d39ce342a66e286cddadb0/store/fill/50/50/27233c9955f1a43f3cfa45004b7377e1e3088057a5721ad4cdd407672870/image" for 27.139.43.99 at 2021-06-07 03:41:52 +0000
+Cannot render console from 27.139.43.99! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Refile::App: [2021-06-07 03:41:54 +0000] GET "/383778b871cf8a05d1d39ce342a66e286cddadb0/store/fill/50/50/27233c9955f1a43f3cfa45004b7377e1e3088057a5721ad4cdd407672870/image" 200 1569.0ms
+
+  [1m[36mGroup Load (0.2ms)[0m  [1m[34mSELECT  "groups".* FROM "groups" ORDER BY "groups"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mUser Load (2.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" INNER JOIN "group_users" ON "users"."id" = "group_users"."user_id" WHERE "group_users"."group_id" = ? LIMIT ?[0m  [["group_id", 3], ["LIMIT", 11]]
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" ORDER BY "users"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mGroupUser Create (5.1ms)[0m  [1m[32mINSERT INTO "group_users" ("user_id", "group_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["user_id", 1], ["group_id", 3], ["created_at", "2021-06-07 03:44:47.313956"], ["updated_at", "2021-06-07 03:44:47.313956"]]
+  [1m[35m (7.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" INNER JOIN "group_users" ON "users"."id" = "group_users"."user_id" WHERE "group_users"."group_id" = ? LIMIT ?[0m  [["group_id", 3], ["LIMIT", 11]]
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" INNER JOIN "group_users" ON "users"."id" = "group_users"."user_id" WHERE "group_users"."group_id" = ? LIMIT ?[0m  [["group_id", 3], ["LIMIT", 11]]
+  [1m[36mGroupUser Load (1.7ms)[0m  [1m[34mSELECT  "group_users".* FROM "group_users" ORDER BY "group_users"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+Started GET "/groups" for 27.139.43.99 at 2021-06-07 04:15:01 +0000
+Cannot render console from 27.139.43.99! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by GroupsController#index as HTML
+  Parameters: {"expect"=>[:destroy]}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.6/lib/active_record/log_subscriber.rb:98
+  Rendering groups/index.html.erb within layouts/application
+  Rendered layouts/_errors.html.erb (0.6ms)
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "users" INNER JOIN "relationships" ON "users"."id" = "relationships"."followed_id" WHERE "relationships"."follower_id" = ?[0m  [["follower_id", 1]]
+  ↳ app/views/users/_info.html.erb:13
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "users" INNER JOIN "relationships" ON "users"."id" = "relationships"."follower_id" WHERE "relationships"."followed_id" = ?[0m  [["followed_id", 1]]
+  ↳ app/views/users/_info.html.erb:17
+  Rendered users/_info.html.erb (14.5ms)
+  Rendered layouts/_errors.html.erb (0.0ms)
+  Rendered books/_form.html.erb (3.8ms)
+  [1m[36mGroup Load (0.2ms)[0m  [1m[34mSELECT "groups".* FROM "groups"[0m
+  ↳ app/views/groups/index.html.erb:23
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "users" INNER JOIN "group_users" ON "users"."id" = "group_users"."user_id" WHERE "group_users"."group_id" = ?[0m  [["group_id", 3]]
+  ↳ app/views/groups/index.html.erb:28
+  Rendered groups/index.html.erb within layouts/application (163.1ms)
+  Rendered layouts/_header.html.erb (0.8ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 389ms (Views: 372.8ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/groups/3" for 27.139.43.99 at 2021-06-07 04:15:05 +0000
+Cannot render console from 27.139.43.99! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by GroupsController#show as HTML
+  Parameters: {"expect"=>[:destroy], "id"=>"3"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.6/lib/active_record/log_subscriber.rb:98
+  [1m[36mGroup Load (0.2ms)[0m  [1m[34mSELECT  "groups".* FROM "groups" WHERE "groups"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/groups_controller.rb:12
+  Rendering groups/show.html.erb within layouts/application
+  Rendered layouts/_errors.html.erb (0.4ms)
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "users" INNER JOIN "relationships" ON "users"."id" = "relationships"."followed_id" WHERE "relationships"."follower_id" = ?[0m  [["follower_id", 1]]
+  ↳ app/views/users/_info.html.erb:13
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "users" INNER JOIN "relationships" ON "users"."id" = "relationships"."follower_id" WHERE "relationships"."followed_id" = ?[0m  [["followed_id", 1]]
+  ↳ app/views/users/_info.html.erb:17
+  Rendered users/_info.html.erb (17.4ms)
+  Rendered layouts/_errors.html.erb (0.0ms)
+  Rendered books/_form.html.erb (7.4ms)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "group_users" ON "users"."id" = "group_users"."user_id" WHERE "group_users"."group_id" = ?[0m  [["group_id", 3]]
+  ↳ app/views/groups/show.html.erb:26
+  Rendered groups/show.html.erb within layouts/application (38.6ms)
+  Rendered layouts/_header.html.erb (0.9ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 152ms (Views: 144.9ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/groups/3" for 27.139.43.99 at 2021-06-07 04:16:00 +0000
+Cannot render console from 27.139.43.99! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by GroupsController#show as HTML
+  Parameters: {"expect"=>[:destroy], "id"=>"3"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.6/lib/active_record/log_subscriber.rb:98
+  [1m[36mGroup Load (0.1ms)[0m  [1m[34mSELECT  "groups".* FROM "groups" WHERE "groups"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/groups_controller.rb:12
+  Rendering groups/show.html.erb within layouts/application
+  Rendered layouts/_errors.html.erb (1.0ms)
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "users" INNER JOIN "relationships" ON "users"."id" = "relationships"."followed_id" WHERE "relationships"."follower_id" = ?[0m  [["follower_id", 1]]
+  ↳ app/views/users/_info.html.erb:13
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "users" INNER JOIN "relationships" ON "users"."id" = "relationships"."follower_id" WHERE "relationships"."followed_id" = ?[0m  [["followed_id", 1]]
+  ↳ app/views/users/_info.html.erb:17
+  Rendered users/_info.html.erb (8.5ms)
+  Rendered layouts/_errors.html.erb (0.0ms)
+  Rendered books/_form.html.erb (4.0ms)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "group_users" ON "users"."id" = "group_users"."user_id" WHERE "group_users"."group_id" = ?[0m  [["group_id", 3]]
+  ↳ app/views/groups/show.html.erb:26
+  Rendered groups/show.html.erb within layouts/application (21.5ms)
+  Rendered layouts/_header.html.erb (0.9ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 139ms (Views: 133.4ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/groups/3/edit" for 27.139.43.99 at 2021-06-07 04:19:32 +0000
+Cannot render console from 27.139.43.99! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by GroupsController#edit as HTML
+  Parameters: {"expect"=>[:destroy], "id"=>"3"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.6/lib/active_record/log_subscriber.rb:98
+  [1m[36mGroup Load (0.1ms)[0m  [1m[34mSELECT  "groups".* FROM "groups" WHERE "groups"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/groups_controller.rb:47
+  Rendering groups/edit.html.erb within layouts/application
+  Rendered layouts/_errors.html.erb (0.4ms)
+  Rendered groups/_form.html.erb (15.2ms)
+  Rendered groups/edit.html.erb within layouts/application (21.7ms)
+  Rendered layouts/_header.html.erb (0.9ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 165ms (Views: 158.0ms | ActiveRecord: 0.2ms)
+
+
+Started PATCH "/groups/3" for 27.139.43.99 at 2021-06-07 04:19:34 +0000
+Cannot render console from 27.139.43.99! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by GroupsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"sPa6IUyYvQKdhNFAvU/jaBb7x+5xLTGwDPTwQigBRAoGJAM4VnhM8CamenzlpJIBiQElDQr8OiL6+PSXx+b2bA==", "group"=>{"name"=>"test group", "introduction"=>"testtesttest", "image"=>"{}"}, "commit"=>"Update Group", "expect"=>[:destroy], "id"=>"3"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.6/lib/active_record/log_subscriber.rb:98
+  [1m[36mGroup Load (0.1ms)[0m  [1m[34mSELECT  "groups".* FROM "groups" WHERE "groups"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/groups_controller.rb:47
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/groups_controller.rb:33
+  [1m[36mGroup Update (22.3ms)[0m  [1m[33mUPDATE "groups" SET "image_id" = ?, "updated_at" = ? WHERE "groups"."id" = ?[0m  [["image_id", "27233c9955f1a43f3cfa45004b7377e1e3088057a5721ad4cdd407672870"], ["updated_at", "2021-06-07 04:19:34.763047"], ["id", 3]]
+  ↳ app/controllers/groups_controller.rb:33
+  [1m[35m (6.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/groups_controller.rb:33
+Redirected to https://7d0ee2c198f5476cbb69bdd91b6647a9.vfs.cloud9.us-east-1.amazonaws.com/groups
+Completed 302 Found in 44ms (ActiveRecord: 29.4ms)
+
+
+Started GET "/groups" for 27.139.43.99 at 2021-06-07 04:19:35 +0000
+Cannot render console from 27.139.43.99! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by GroupsController#index as HTML
+  Parameters: {"expect"=>[:destroy]}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.6/lib/active_record/log_subscriber.rb:98
+  Rendering groups/index.html.erb within layouts/application
+  Rendered layouts/_errors.html.erb (1.5ms)
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "users" INNER JOIN "relationships" ON "users"."id" = "relationships"."followed_id" WHERE "relationships"."follower_id" = ?[0m  [["follower_id", 1]]
+  ↳ app/views/users/_info.html.erb:13
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "users" INNER JOIN "relationships" ON "users"."id" = "relationships"."follower_id" WHERE "relationships"."followed_id" = ?[0m  [["followed_id", 1]]
+  ↳ app/views/users/_info.html.erb:17
+  Rendered users/_info.html.erb (8.2ms)
+  Rendered layouts/_errors.html.erb (0.0ms)
+  Rendered books/_form.html.erb (3.1ms)
+  [1m[36mGroup Load (0.1ms)[0m  [1m[34mSELECT "groups".* FROM "groups"[0m
+  ↳ app/views/groups/index.html.erb:23
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "users" INNER JOIN "group_users" ON "users"."id" = "group_users"."user_id" WHERE "group_users"."group_id" = ?[0m  [["group_id", 3]]
+  ↳ app/views/groups/index.html.erb:28
+  Rendered groups/index.html.erb within layouts/application (24.0ms)
+  Rendered layouts/_header.html.erb (0.8ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 135ms (Views: 130.8ms | ActiveRecord: 0.7ms)
+
+
+Started DELETE "/users/sign_out" for 27.139.43.99 at 2021-06-07 04:19:40 +0000
+Cannot render console from 27.139.43.99! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"JrDtsD+1yQggib6cnxxqmKeiyKJzdvLZI5PblSHSExjiBJEMYgfkCic/XoBaPDP0CVZdMZrNPlP+n+rNU/2zbQ=="}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.6/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.6/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.6/lib/active_record/log_subscriber.rb:98
+Redirected to https://7d0ee2c198f5476cbb69bdd91b6647a9.vfs.cloud9.us-east-1.amazonaws.com/
+Completed 302 Found in 28ms (ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 27.139.43.99 at 2021-06-07 04:19:40 +0000
+Cannot render console from 27.139.43.99! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomesController#top as HTML
+  Rendering homes/top.html.erb within layouts/application
+  Rendered homes/top.html.erb within layouts/application (0.6ms)
+  Rendered layouts/_header.html.erb (3.2ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 117ms (Views: 114.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 27.139.43.99 at 2021-06-07 04:19:42 +0000
+Cannot render console from 27.139.43.99! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (8.1ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (26.4ms)
+  Rendered layouts/_header.html.erb (0.9ms)
+  Rendered layouts/_footer.html.erb (1.3ms)
+Completed 200 OK in 187ms (Views: 185.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/sign_in" for 27.139.43.99 at 2021-06-07 04:19:50 +0000
+Cannot render console from 27.139.43.99! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"bwrqAvkWHWc+Z/tBu2jfvzgZbHtPjrtm2Zdt4xmgI5MDImu7/MGJR2xIuac1GuQddRt/23woZGQKhuLXsu/gAA==", "user"=>{"name"=>"kazuma", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."name" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["name", "kazuma"], ["LIMIT", 1]]
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.6/lib/active_record/log_subscriber.rb:98
+Redirected to https://7d0ee2c198f5476cbb69bdd91b6647a9.vfs.cloud9.us-east-1.amazonaws.com/users/2
+Completed 302 Found in 392ms (ActiveRecord: 0.6ms)
+
+
+Started GET "/users/2" for 27.139.43.99 at 2021-06-07 04:19:50 +0000
+Cannot render console from 27.139.43.99! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.6/lib/active_record/log_subscriber.rb:98
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:5
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "books" WHERE "books"."user_id" = ? AND "books"."created_at" BETWEEN ? AND ?[0m  [["user_id", 2], ["created_at", "2021-06-06 00:00:00"], ["created_at", "2021-06-06 23:59:59.999999"]]
+  ↳ app/controllers/users_controller.rb:80
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "books" WHERE "books"."user_id" = ? AND (created_at >= '2021-06-07')[0m  [["user_id", 2]]
+  ↳ app/controllers/users_controller.rb:81
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "books" WHERE "books"."user_id" = ? AND "books"."created_at" BETWEEN ? AND ?[0m  [["user_id", 2], ["created_at", "2021-05-25 00:00:00"], ["created_at", "2021-05-31 23:59:59.999999"]]
+  ↳ app/controllers/users_controller.rb:80
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "books" WHERE "books"."user_id" = ? AND "books"."created_at" BETWEEN ? AND ?[0m  [["user_id", 2], ["created_at", "2021-06-01 00:00:00"], ["created_at", "2021-06-07 23:59:59.999999"]]
+  ↳ app/controllers/users_controller.rb:81
+  Rendering users/show.html.erb within layouts/application
+  Rendered searches/_search.html.erb (1.3ms)
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "users" INNER JOIN "relationships" ON "users"."id" = "relationships"."followed_id" WHERE "relationships"."follower_id" = ?[0m  [["follower_id", 2]]
+  ↳ app/views/users/_info.html.erb:13
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "users" INNER JOIN "relationships" ON "users"."id" = "relationships"."follower_id" WHERE "relationships"."followed_id" = ?[0m  [["followed_id", 2]]
+  ↳ app/views/users/_info.html.erb:17
+  Rendered users/_info.html.erb (6.3ms)
+  Rendered layouts/_errors.html.erb (0.4ms)
+  Rendered books/_form.html.erb (3.2ms)
+  [1m[36mBook Load (0.1ms)[0m  [1m[34mSELECT "books".* FROM "books" WHERE "books"."user_id" = ?[0m  [["user_id", 2]]
+  ↳ app/views/books/_table.html.erb:1
+  [1m[36mFavorite Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "favorites" WHERE "favorites"."book_id" = ? AND "favorites"."user_id" = ? LIMIT ?[0m  [["book_id", 10], ["user_id", 2], ["LIMIT", 1]]
+  ↳ app/models/book.rb:11
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "favorites" WHERE "favorites"."book_id" = ?[0m  [["book_id", 10]]
+  ↳ app/views/favorites/_favorite.html.erb:7
+  Rendered favorites/_favorite.html.erb (8.1ms)
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "comments" WHERE "comments"."book_id" = ?[0m  [["book_id", 10]]
+  ↳ app/views/books/_table.html.erb:12
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(DISTINCT "impressions"."session_hash") FROM "impressions" WHERE "impressions"."impressionable_id" = ? AND "impressions"."impressionable_type" = ?[0m  [["impressionable_id", 10], ["impressionable_type", "Book"]]
+  ↳ app/views/books/_table.html.erb:13
+  Rendered books/_table.html.erb (26.2ms)
+  Rendered books/_index.html.erb (28.1ms)
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM "books" WHERE "books"."user_id" = ? AND (created_at >= '2021-06-07')[0m  [["user_id", 2]]
+  ↳ app/views/users/show.html.erb:22
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM "books" WHERE "books"."user_id" = ? AND "books"."created_at" BETWEEN ? AND ?[0m  [["user_id", 2], ["created_at", "2021-06-06 00:00:00"], ["created_at", "2021-06-06 23:59:59.999999"]]
+  ↳ app/views/users/show.html.erb:23
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM "books" WHERE "books"."user_id" = ? AND "books"."created_at" BETWEEN ? AND ?[0m  [["user_id", 2], ["created_at", "2021-06-01 00:00:00"], ["created_at", "2021-06-07 23:59:59.999999"]]
+  ↳ app/views/users/show.html.erb:34
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM "books" WHERE "books"."user_id" = ? AND "books"."created_at" BETWEEN ? AND ?[0m  [["user_id", 2], ["created_at", "2021-05-25 00:00:00"], ["created_at", "2021-05-31 23:59:59.999999"]]
+  ↳ app/views/users/show.html.erb:35
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "books" WHERE "books"."user_id" = ? AND "books"."created_at" BETWEEN ? AND ?[0m  [["user_id", 2], ["created_at", "2021-06-01 00:00:00"], ["created_at", "2021-06-01 23:59:59.999999"]]
+  ↳ app/views/users/show.html.erb:53
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "books" WHERE "books"."user_id" = ? AND "books"."created_at" BETWEEN ? AND ?[0m  [["user_id", 2], ["created_at", "2021-06-02 00:00:00"], ["created_at", "2021-06-02 23:59:59.999999"]]
+  ↳ app/views/users/show.html.erb:54
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "books" WHERE "books"."user_id" = ? AND "books"."created_at" BETWEEN ? AND ?[0m  [["user_id", 2], ["created_at", "2021-06-03 00:00:00"], ["created_at", "2021-06-03 23:59:59.999999"]]
+  ↳ app/views/users/show.html.erb:55
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "books" WHERE "books"."user_id" = ? AND "books"."created_at" BETWEEN ? AND ?[0m  [["user_id", 2], ["created_at", "2021-06-04 00:00:00"], ["created_at", "2021-06-04 23:59:59.999999"]]
+  ↳ app/views/users/show.html.erb:56
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "books" WHERE "books"."user_id" = ? AND "books"."created_at" BETWEEN ? AND ?[0m  [["user_id", 2], ["created_at", "2021-06-05 00:00:00"], ["created_at", "2021-06-05 23:59:59.999999"]]
+  ↳ app/views/users/show.html.erb:57
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM "books" WHERE "books"."user_id" = ? AND "books"."created_at" BETWEEN ? AND ?[0m  [["user_id", 2], ["created_at", "2021-06-06 00:00:00"], ["created_at", "2021-06-06 23:59:59.999999"]]
+  ↳ app/views/users/show.html.erb:58
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "books" WHERE "books"."user_id" = ? AND "books"."created_at" BETWEEN ? AND ?[0m  [["user_id", 2], ["created_at", "2021-06-07 00:00:00"], ["created_at", "2021-06-07 23:59:59.999999"]]
+  ↳ app/views/users/show.html.erb:59
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM "books" WHERE "books"."user_id" = ? AND "books"."created_at" BETWEEN ? AND ?[0m  [["user_id", 2], ["created_at", "2021-06-01 00:00:00"], ["created_at", "2021-06-01 23:59:59.999999"]]
+  ↳ app/views/users/show.html.erb:73
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM "books" WHERE "books"."user_id" = ? AND "books"."created_at" BETWEEN ? AND ?[0m  [["user_id", 2], ["created_at", "2021-06-02 00:00:00"], ["created_at", "2021-06-02 23:59:59.999999"]]
+  ↳ app/views/users/show.html.erb:73
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM "books" WHERE "books"."user_id" = ? AND "books"."created_at" BETWEEN ? AND ?[0m  [["user_id", 2], ["created_at", "2021-06-03 00:00:00"], ["created_at", "2021-06-03 23:59:59.999999"]]
+  ↳ app/views/users/show.html.erb:73
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM "books" WHERE "books"."user_id" = ? AND "books"."created_at" BETWEEN ? AND ?[0m  [["user_id", 2], ["created_at", "2021-06-04 00:00:00"], ["created_at", "2021-06-04 23:59:59.999999"]]
+  ↳ app/views/users/show.html.erb:73
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM "books" WHERE "books"."user_id" = ? AND "books"."created_at" BETWEEN ? AND ?[0m  [["user_id", 2], ["created_at", "2021-06-05 00:00:00"], ["created_at", "2021-06-05 23:59:59.999999"]]
+  ↳ app/views/users/show.html.erb:73
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM "books" WHERE "books"."user_id" = ? AND "books"."created_at" BETWEEN ? AND ?[0m  [["user_id", 2], ["created_at", "2021-06-06 00:00:00"], ["created_at", "2021-06-06 23:59:59.999999"]]
+  ↳ app/views/users/show.html.erb:73
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM "books" WHERE "books"."user_id" = ? AND "books"."created_at" BETWEEN ? AND ?[0m  [["user_id", 2], ["created_at", "2021-06-07 00:00:00"], ["created_at", "2021-06-07 23:59:59.999999"]]
+  ↳ app/views/users/show.html.erb:73
+  Rendered users/show.html.erb within layouts/application (80.5ms)
+  Rendered layouts/_header.html.erb (0.9ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 215ms (Views: 194.5ms | ActiveRecord: 3.4ms)
+
+
+Started GET "/attachments/ba463db93d5c24a910c895d5588db026e0b22dde/store/fill/100/100/d05047b382f1a55ae87f2c7d99ca35f21bf0a55d0a18e76e224d83f6078a/profile_image" for 27.139.43.99 at 2021-06-07 04:19:51 +0000
+Cannot render console from 27.139.43.99! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Refile::App: [2021-06-07 04:19:51 +0000] GET "/ba463db93d5c24a910c895d5588db026e0b22dde/store/fill/100/100/d05047b382f1a55ae87f2c7d99ca35f21bf0a55d0a18e76e224d83f6078a/profile_image" 200 165.1ms
+
+Started GET "/users" for 27.139.43.99 at 2021-06-07 04:19:57 +0000
+Cannot render console from 27.139.43.99! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.6/lib/active_record/log_subscriber.rb:98
+  Rendering users/index.html.erb within layouts/application
+  Rendered searches/_search.html.erb (1.5ms)
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "users" INNER JOIN "relationships" ON "users"."id" = "relationships"."followed_id" WHERE "relationships"."follower_id" = ?[0m  [["follower_id", 2]]
+  ↳ app/views/users/_info.html.erb:13
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "users" INNER JOIN "relationships" ON "users"."id" = "relationships"."follower_id" WHERE "relationships"."followed_id" = ?[0m  [["followed_id", 2]]
+  ↳ app/views/users/_info.html.erb:17
+  Rendered users/_info.html.erb (7.5ms)
+  Rendered layouts/_errors.html.erb (0.3ms)
+  Rendered books/_form.html.erb (3.4ms)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/_index.html.erb:10
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "users" INNER JOIN "relationships" ON "users"."id" = "relationships"."followed_id" WHERE "relationships"."follower_id" = ?[0m  [["follower_id", 1]]
+  ↳ app/views/users/_index.html.erb:14
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "users" INNER JOIN "relationships" ON "users"."id" = "relationships"."follower_id" WHERE "relationships"."followed_id" = ?[0m  [["followed_id", 1]]
+  ↳ app/views/users/_index.html.erb:15
+  [1m[36mUser Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "users" INNER JOIN "relationships" ON "users"."id" = "relationships"."followed_id" WHERE "relationships"."follower_id" = ? AND "users"."id" = ? LIMIT ?[0m  [["follower_id", 2], ["id", 1], ["LIMIT", 1]]
+  ↳ app/models/user.rb:46
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM "users" INNER JOIN "relationships" ON "users"."id" = "relationships"."followed_id" WHERE "relationships"."follower_id" = ?[0m  [["follower_id", 2]]
+  ↳ app/views/users/_index.html.erb:14
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM "users" INNER JOIN "relationships" ON "users"."id" = "relationships"."follower_id" WHERE "relationships"."followed_id" = ?[0m  [["followed_id", 2]]
+  ↳ app/views/users/_index.html.erb:15
+  Rendered users/_index.html.erb (18.1ms)
+  Rendered users/index.html.erb within layouts/application (36.7ms)
+  Rendered layouts/_header.html.erb (0.8ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 159ms (Views: 152.8ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/groups" for 27.139.43.99 at 2021-06-07 04:19:59 +0000
+Cannot render console from 27.139.43.99! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by GroupsController#index as HTML
+  Parameters: {"expect"=>[:destroy]}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.6/lib/active_record/log_subscriber.rb:98
+  Rendering groups/index.html.erb within layouts/application
+  Rendered layouts/_errors.html.erb (0.4ms)
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "users" INNER JOIN "relationships" ON "users"."id" = "relationships"."followed_id" WHERE "relationships"."follower_id" = ?[0m  [["follower_id", 2]]
+  ↳ app/views/users/_info.html.erb:13
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "users" INNER JOIN "relationships" ON "users"."id" = "relationships"."follower_id" WHERE "relationships"."followed_id" = ?[0m  [["followed_id", 2]]
+  ↳ app/views/users/_info.html.erb:17
+  Rendered users/_info.html.erb (9.8ms)
+  Rendered layouts/_errors.html.erb (0.0ms)
+  Rendered books/_form.html.erb (4.0ms)
+  [1m[36mGroup Load (0.1ms)[0m  [1m[34mSELECT "groups".* FROM "groups"[0m
+  ↳ app/views/groups/index.html.erb:23
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "users" INNER JOIN "group_users" ON "users"."id" = "group_users"."user_id" WHERE "group_users"."group_id" = ?[0m  [["group_id", 3]]
+  ↳ app/views/groups/index.html.erb:28
+  Rendered groups/index.html.erb within layouts/application (23.3ms)
+  Rendered layouts/_header.html.erb (0.9ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 140ms (Views: 135.0ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/groups/3" for 27.139.43.99 at 2021-06-07 04:20:06 +0000
+Cannot render console from 27.139.43.99! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by GroupsController#show as HTML
+  Parameters: {"expect"=>[:destroy], "id"=>"3"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.6/lib/active_record/log_subscriber.rb:98
+  [1m[36mGroup Load (0.1ms)[0m  [1m[34mSELECT  "groups".* FROM "groups" WHERE "groups"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/groups_controller.rb:12
+  Rendering groups/show.html.erb within layouts/application
+  Rendered layouts/_errors.html.erb (0.3ms)
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "users" INNER JOIN "relationships" ON "users"."id" = "relationships"."followed_id" WHERE "relationships"."follower_id" = ?[0m  [["follower_id", 2]]
+  ↳ app/views/users/_info.html.erb:13
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "users" INNER JOIN "relationships" ON "users"."id" = "relationships"."follower_id" WHERE "relationships"."followed_id" = ?[0m  [["followed_id", 2]]
+  ↳ app/views/users/_info.html.erb:17
+  Rendered users/_info.html.erb (6.5ms)
+  Rendered layouts/_errors.html.erb (0.0ms)
+  Rendered books/_form.html.erb (2.9ms)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "group_users" ON "users"."id" = "group_users"."user_id" WHERE "group_users"."group_id" = ?[0m  [["group_id", 3]]
+  ↳ app/views/groups/show.html.erb:26
+  Rendered groups/show.html.erb within layouts/application (22.1ms)
+Completed 500 Internal Server Error in 31ms (ActiveRecord: 0.6ms)
+
+
+  
+ActionView::Template::Error (undefined method `includo?' for #<User::ActiveRecord_Associations_CollectionProxy:0x00007fedcec3dd90>
+Did you mean?  include?
+               includes):
+    30:             <td>
+    31:               <% if @group.owner_id == current_user.id %>
+    32:                 <%= link_to 'Edit', edit_group_path(@group), class: "btn btn-sm btn-success" %>
+    33:               <% elsif @group.users.includo?(current_user) %>
+    34:                 <%= link_to "leave this group", group_path(@group), method: :delete, class: "btn btn-sm btn-danger" %>
+    35:               <% else %>
+    36:                 <%= link_to 'Join this group', group_join_path(@group), class: 'btn btn-sm btn-success' %>
+  
+app/views/groups/show.html.erb:33:in `_app_views_groups_show_html_erb___306358940630420838_70329676251860'
+Started GET "/groups/3" for 27.139.43.99 at 2021-06-07 04:20:42 +0000
+Cannot render console from 27.139.43.99! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by GroupsController#show as HTML
+  Parameters: {"expect"=>[:destroy], "id"=>"3"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.6/lib/active_record/log_subscriber.rb:98
+  [1m[36mGroup Load (0.1ms)[0m  [1m[34mSELECT  "groups".* FROM "groups" WHERE "groups"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/groups_controller.rb:12
+  Rendering groups/show.html.erb within layouts/application
+  Rendered layouts/_errors.html.erb (0.4ms)
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "users" INNER JOIN "relationships" ON "users"."id" = "relationships"."followed_id" WHERE "relationships"."follower_id" = ?[0m  [["follower_id", 2]]
+  ↳ app/views/users/_info.html.erb:13
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "users" INNER JOIN "relationships" ON "users"."id" = "relationships"."follower_id" WHERE "relationships"."followed_id" = ?[0m  [["followed_id", 2]]
+  ↳ app/views/users/_info.html.erb:17
+  Rendered users/_info.html.erb (6.8ms)
+  Rendered layouts/_errors.html.erb (0.0ms)
+  Rendered books/_form.html.erb (2.9ms)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "group_users" ON "users"."id" = "group_users"."user_id" WHERE "group_users"."group_id" = ?[0m  [["group_id", 3]]
+  ↳ app/views/groups/show.html.erb:26
+  Rendered groups/show.html.erb within layouts/application (179.5ms)
+Completed 500 Internal Server Error in 191ms (ActiveRecord: 0.7ms)
+
+
+  
+ActionView::Template::Error (undefined method `group_join_path' for #<#<Class:0x00007fedccb35d28>:0x0000000003fd1a30>
+Did you mean?  group_path):
+    33:               <% elsif @group.users.include?(current_user) %>
+    34:                 <%= link_to "leave this group", group_path(@group), method: :delete, class: "btn btn-sm btn-danger" %>
+    35:               <% else %>
+    36:                 <%= link_to 'Join this group', group_join_path(@group), class: 'btn btn-sm btn-success' %>
+    37:               <% end %>
+    38:             </td>
+    39:           </tr>
+  
+app/views/groups/show.html.erb:36:in `_app_views_groups_show_html_erb___306358940630420838_33418760'
+Started GET "/groups/3" for 27.139.43.99 at 2021-06-07 04:24:26 +0000
+Cannot render console from 27.139.43.99! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by GroupsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.6/lib/active_record/log_subscriber.rb:98
+  [1m[36mGroup Load (0.1ms)[0m  [1m[34mSELECT  "groups".* FROM "groups" WHERE "groups"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/groups_controller.rb:12
+  Rendering groups/show.html.erb within layouts/application
+  Rendered layouts/_errors.html.erb (0.3ms)
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "users" INNER JOIN "relationships" ON "users"."id" = "relationships"."followed_id" WHERE "relationships"."follower_id" = ?[0m  [["follower_id", 2]]
+  ↳ app/views/users/_info.html.erb:13
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "users" INNER JOIN "relationships" ON "users"."id" = "relationships"."follower_id" WHERE "relationships"."followed_id" = ?[0m  [["followed_id", 2]]
+  ↳ app/views/users/_info.html.erb:17
+  Rendered users/_info.html.erb (11.4ms)
+  Rendered layouts/_errors.html.erb (0.0ms)
+  Rendered books/_form.html.erb (3.3ms)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "group_users" ON "users"."id" = "group_users"."user_id" WHERE "group_users"."group_id" = ?[0m  [["group_id", 3]]
+  ↳ app/views/groups/show.html.erb:26
+  Rendered groups/show.html.erb within layouts/application (28.7ms)
+  Rendered layouts/_header.html.erb (0.8ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 245ms (Views: 187.3ms | ActiveRecord: 6.4ms)
+
+
+Started GET "/groups/3/join" for 27.139.43.99 at 2021-06-07 04:24:40 +0000
+Cannot render console from 27.139.43.99! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  
+ActionController::RoutingError (uninitialized constant GroupController):
+  
+activesupport (5.2.6) lib/active_support/inflector/methods.rb:283:in `const_get'
+activesupport (5.2.6) lib/active_support/inflector/methods.rb:283:in `block in constantize'
+activesupport (5.2.6) lib/active_support/inflector/methods.rb:281:in `each'
+activesupport (5.2.6) lib/active_support/inflector/methods.rb:281:in `inject'
+activesupport (5.2.6) lib/active_support/inflector/methods.rb:281:in `constantize'
+actionpack (5.2.6) lib/action_dispatch/http/request.rb:88:in `controller_class_for'
+actionpack (5.2.6) lib/action_dispatch/http/request.rb:81:in `controller_class'
+actionpack (5.2.6) lib/action_dispatch/routing/route_set.rb:46:in `controller'
+actionpack (5.2.6) lib/action_dispatch/routing/route_set.rb:32:in `serve'
+actionpack (5.2.6) lib/action_dispatch/journey/router.rb:52:in `block in serve'
+actionpack (5.2.6) lib/action_dispatch/journey/router.rb:35:in `each'
+actionpack (5.2.6) lib/action_dispatch/journey/router.rb:35:in `serve'
+actionpack (5.2.6) lib/action_dispatch/routing/route_set.rb:840:in `call'
+warden (1.2.9) lib/warden/manager.rb:36:in `block in call'
+warden (1.2.9) lib/warden/manager.rb:34:in `catch'
+warden (1.2.9) lib/warden/manager.rb:34:in `call'
+rack (2.2.3) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.2.3) lib/rack/etag.rb:27:in `call'
+rack (2.2.3) lib/rack/conditional_get.rb:27:in `call'
+rack (2.2.3) lib/rack/head.rb:12:in `call'
+actionpack (5.2.6) lib/action_dispatch/http/content_security_policy.rb:18:in `call'
+rack (2.2.3) lib/rack/session/abstract/id.rb:266:in `context'
+rack (2.2.3) lib/rack/session/abstract/id.rb:260:in `call'
+actionpack (5.2.6) lib/action_dispatch/middleware/cookies.rb:670:in `call'
+activerecord (5.2.6) lib/active_record/migration.rb:559:in `call'
+actionpack (5.2.6) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+activesupport (5.2.6) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (5.2.6) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (5.2.6) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.6) lib/action_dispatch/middleware/debug_exceptions.rb:61:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:22:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.6) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.6) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.6) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.6) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.6) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.6) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.6) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.6) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.6) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.6) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.6) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.6) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+railties (5.2.6) lib/rails/engine.rb:524:in `call'
+puma (3.12.6) lib/puma/configuration.rb:227:in `call'
+puma (3.12.6) lib/puma/server.rb:706:in `handle_request'
+puma (3.12.6) lib/puma/server.rb:476:in `process_client'
+puma (3.12.6) lib/puma/server.rb:334:in `block in run'
+puma (3.12.6) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/groups/3" for 27.139.43.99 at 2021-06-07 04:25:15 +0000
+Cannot render console from 27.139.43.99! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by GroupsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.6/lib/active_record/log_subscriber.rb:98
+  [1m[36mGroup Load (0.1ms)[0m  [1m[34mSELECT  "groups".* FROM "groups" WHERE "groups"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/groups_controller.rb:12
+  Rendering groups/show.html.erb within layouts/application
+  Rendered layouts/_errors.html.erb (0.3ms)
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "users" INNER JOIN "relationships" ON "users"."id" = "relationships"."followed_id" WHERE "relationships"."follower_id" = ?[0m  [["follower_id", 2]]
+  ↳ app/views/users/_info.html.erb:13
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "users" INNER JOIN "relationships" ON "users"."id" = "relationships"."follower_id" WHERE "relationships"."followed_id" = ?[0m  [["followed_id", 2]]
+  ↳ app/views/users/_info.html.erb:17
+  Rendered users/_info.html.erb (7.3ms)
+  Rendered layouts/_errors.html.erb (0.0ms)
+  Rendered books/_form.html.erb (3.0ms)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "group_users" ON "users"."id" = "group_users"."user_id" WHERE "group_users"."group_id" = ?[0m  [["group_id", 3]]
+  ↳ app/views/groups/show.html.erb:26
+  Rendered groups/show.html.erb within layouts/application (18.4ms)
+  Rendered layouts/_header.html.erb (1.0ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 146ms (Views: 140.0ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/groups/3" for 27.139.43.99 at 2021-06-07 04:27:24 +0000
+Cannot render console from 27.139.43.99! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by GroupsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.6/lib/active_record/log_subscriber.rb:98
+  [1m[36mGroup Load (0.1ms)[0m  [1m[34mSELECT  "groups".* FROM "groups" WHERE "groups"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/groups_controller.rb:12
+  Rendering groups/show.html.erb within layouts/application
+  Rendered layouts/_errors.html.erb (0.3ms)
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "users" INNER JOIN "relationships" ON "users"."id" = "relationships"."followed_id" WHERE "relationships"."follower_id" = ?[0m  [["follower_id", 2]]
+  ↳ app/views/users/_info.html.erb:13
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "users" INNER JOIN "relationships" ON "users"."id" = "relationships"."follower_id" WHERE "relationships"."followed_id" = ?[0m  [["followed_id", 2]]
+  ↳ app/views/users/_info.html.erb:17
+  Rendered users/_info.html.erb (10.2ms)
+  Rendered layouts/_errors.html.erb (0.0ms)
+  Rendered books/_form.html.erb (2.9ms)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "group_users" ON "users"."id" = "group_users"."user_id" WHERE "group_users"."group_id" = ?[0m  [["group_id", 3]]
+  ↳ app/views/groups/show.html.erb:26
+  Rendered groups/show.html.erb within layouts/application (28.1ms)
+  Rendered layouts/_header.html.erb (0.8ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 190ms (Views: 149.4ms | ActiveRecord: 5.2ms)
+
+
+Started GET "/groups/3/join" for 27.139.43.99 at 2021-06-07 04:27:26 +0000
+Cannot render console from 27.139.43.99! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  
+ActionController::RoutingError (uninitialized constant GroupController):
+  
+activesupport (5.2.6) lib/active_support/inflector/methods.rb:283:in `const_get'
+activesupport (5.2.6) lib/active_support/inflector/methods.rb:283:in `block in constantize'
+activesupport (5.2.6) lib/active_support/inflector/methods.rb:281:in `each'
+activesupport (5.2.6) lib/active_support/inflector/methods.rb:281:in `inject'
+activesupport (5.2.6) lib/active_support/inflector/methods.rb:281:in `constantize'
+actionpack (5.2.6) lib/action_dispatch/http/request.rb:88:in `controller_class_for'
+actionpack (5.2.6) lib/action_dispatch/http/request.rb:81:in `controller_class'
+actionpack (5.2.6) lib/action_dispatch/routing/route_set.rb:46:in `controller'
+actionpack (5.2.6) lib/action_dispatch/routing/route_set.rb:32:in `serve'
+actionpack (5.2.6) lib/action_dispatch/journey/router.rb:52:in `block in serve'
+actionpack (5.2.6) lib/action_dispatch/journey/router.rb:35:in `each'
+actionpack (5.2.6) lib/action_dispatch/journey/router.rb:35:in `serve'
+actionpack (5.2.6) lib/action_dispatch/routing/route_set.rb:840:in `call'
+warden (1.2.9) lib/warden/manager.rb:36:in `block in call'
+warden (1.2.9) lib/warden/manager.rb:34:in `catch'
+warden (1.2.9) lib/warden/manager.rb:34:in `call'
+rack (2.2.3) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.2.3) lib/rack/etag.rb:27:in `call'
+rack (2.2.3) lib/rack/conditional_get.rb:27:in `call'
+rack (2.2.3) lib/rack/head.rb:12:in `call'
+actionpack (5.2.6) lib/action_dispatch/http/content_security_policy.rb:18:in `call'
+rack (2.2.3) lib/rack/session/abstract/id.rb:266:in `context'
+rack (2.2.3) lib/rack/session/abstract/id.rb:260:in `call'
+actionpack (5.2.6) lib/action_dispatch/middleware/cookies.rb:670:in `call'
+activerecord (5.2.6) lib/active_record/migration.rb:559:in `call'
+actionpack (5.2.6) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+activesupport (5.2.6) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (5.2.6) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (5.2.6) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.6) lib/action_dispatch/middleware/debug_exceptions.rb:61:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:22:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.6) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.6) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.6) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.6) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.6) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.6) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.6) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.6) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.6) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.6) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.6) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.6) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+railties (5.2.6) lib/rails/engine.rb:524:in `call'
+puma (3.12.6) lib/puma/configuration.rb:227:in `call'
+puma (3.12.6) lib/puma/server.rb:706:in `handle_request'
+puma (3.12.6) lib/puma/server.rb:476:in `process_client'
+puma (3.12.6) lib/puma/server.rb:334:in `block in run'
+puma (3.12.6) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/groups/3" for 27.139.43.99 at 2021-06-07 04:27:43 +0000
+Cannot render console from 27.139.43.99! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by GroupsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.6/lib/active_record/log_subscriber.rb:98
+  [1m[36mGroup Load (0.1ms)[0m  [1m[34mSELECT  "groups".* FROM "groups" WHERE "groups"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/groups_controller.rb:12
+  Rendering groups/show.html.erb within layouts/application
+  Rendered layouts/_errors.html.erb (0.4ms)
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "users" INNER JOIN "relationships" ON "users"."id" = "relationships"."followed_id" WHERE "relationships"."follower_id" = ?[0m  [["follower_id", 2]]
+  ↳ app/views/users/_info.html.erb:13
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "users" INNER JOIN "relationships" ON "users"."id" = "relationships"."follower_id" WHERE "relationships"."followed_id" = ?[0m  [["followed_id", 2]]
+  ↳ app/views/users/_info.html.erb:17
+  Rendered users/_info.html.erb (10.2ms)
+  Rendered layouts/_errors.html.erb (0.0ms)
+  Rendered books/_form.html.erb (2.7ms)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "group_users" ON "users"."id" = "group_users"."user_id" WHERE "group_users"."group_id" = ?[0m  [["group_id", 3]]
+  ↳ app/views/groups/show.html.erb:26
+  Rendered groups/show.html.erb within layouts/application (24.0ms)
+  Rendered layouts/_header.html.erb (0.8ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 185ms (Views: 179.0ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/groups/3/join" for 27.139.43.99 at 2021-06-07 04:27:51 +0000
+Cannot render console from 27.139.43.99! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by GroupsController#join as HTML
+  Parameters: {"group_id"=>"3"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.6/lib/active_record/log_subscriber.rb:98
+Completed 404 Not Found in 22ms (ActiveRecord: 1.4ms)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Group without an ID):
+  
+app/controllers/groups_controller.rb:30:in `join'
+Started GET "/groups/3" for 27.139.43.99 at 2021-06-07 04:28:00 +0000
+Cannot render console from 27.139.43.99! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by GroupsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.6/lib/active_record/log_subscriber.rb:98
+  [1m[36mGroup Load (0.1ms)[0m  [1m[34mSELECT  "groups".* FROM "groups" WHERE "groups"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/groups_controller.rb:12
+  Rendering groups/show.html.erb within layouts/application
+  Rendered layouts/_errors.html.erb (0.3ms)
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "users" INNER JOIN "relationships" ON "users"."id" = "relationships"."followed_id" WHERE "relationships"."follower_id" = ?[0m  [["follower_id", 2]]
+  ↳ app/views/users/_info.html.erb:13
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "users" INNER JOIN "relationships" ON "users"."id" = "relationships"."follower_id" WHERE "relationships"."followed_id" = ?[0m  [["followed_id", 2]]
+  ↳ app/views/users/_info.html.erb:17
+  Rendered users/_info.html.erb (29.9ms)
+  Rendered layouts/_errors.html.erb (0.0ms)
+  Rendered books/_form.html.erb (3.2ms)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "group_users" ON "users"."id" = "group_users"."user_id" WHERE "group_users"."group_id" = ?[0m  [["group_id", 3]]
+  ↳ app/views/groups/show.html.erb:26
+  Rendered groups/show.html.erb within layouts/application (47.1ms)
+  Rendered layouts/_header.html.erb (0.9ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 209ms (Views: 176.1ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/groups/3" for 27.139.43.99 at 2021-06-07 04:30:10 +0000
+Cannot render console from 27.139.43.99! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by GroupsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.6/lib/active_record/log_subscriber.rb:98
+  [1m[36mGroup Load (0.1ms)[0m  [1m[34mSELECT  "groups".* FROM "groups" WHERE "groups"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/groups_controller.rb:12
+  Rendering groups/show.html.erb within layouts/application
+  Rendered layouts/_errors.html.erb (0.4ms)
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "users" INNER JOIN "relationships" ON "users"."id" = "relationships"."followed_id" WHERE "relationships"."follower_id" = ?[0m  [["follower_id", 2]]
+  ↳ app/views/users/_info.html.erb:13
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "users" INNER JOIN "relationships" ON "users"."id" = "relationships"."follower_id" WHERE "relationships"."followed_id" = ?[0m  [["followed_id", 2]]
+  ↳ app/views/users/_info.html.erb:17
+  Rendered users/_info.html.erb (10.7ms)
+  Rendered layouts/_errors.html.erb (0.0ms)
+  Rendered books/_form.html.erb (3.1ms)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "group_users" ON "users"."id" = "group_users"."user_id" WHERE "group_users"."group_id" = ?[0m  [["group_id", 3]]
+  ↳ app/views/groups/show.html.erb:26
+  Rendered groups/show.html.erb within layouts/application (27.0ms)
+  Rendered layouts/_header.html.erb (0.9ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 206ms (Views: 163.7ms | ActiveRecord: 2.6ms)
+
+
+Started GET "/groups/3/join" for 27.139.43.99 at 2021-06-07 04:30:11 +0000
+Cannot render console from 27.139.43.99! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by GroupsController#join as HTML
+  Parameters: {"group_id"=>"3"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.6/lib/active_record/log_subscriber.rb:98
+  [1m[36mGroup Load (0.1ms)[0m  [1m[34mSELECT  "groups".* FROM "groups" WHERE "groups"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/groups_controller.rb:30
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/groups_controller.rb:31
+  [1m[36mGroupUser Create (5.0ms)[0m  [1m[32mINSERT INTO "group_users" ("user_id", "group_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["user_id", 2], ["group_id", 3], ["created_at", "2021-06-07 04:30:11.608941"], ["updated_at", "2021-06-07 04:30:11.608941"]]
+  ↳ app/controllers/groups_controller.rb:31
+  [1m[35m (8.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/groups_controller.rb:31
+Redirected to https://7d0ee2c198f5476cbb69bdd91b6647a9.vfs.cloud9.us-east-1.amazonaws.com/groups
+Completed 302 Found in 42ms (ActiveRecord: 14.3ms)
+
+
+Started GET "/groups" for 27.139.43.99 at 2021-06-07 04:30:11 +0000
+Cannot render console from 27.139.43.99! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by GroupsController#index as HTML
+  [1m[36mUser Load (1.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.6/lib/active_record/log_subscriber.rb:98
+  Rendering groups/index.html.erb within layouts/application
+  Rendered layouts/_errors.html.erb (0.4ms)
+  [1m[35m (2.5ms)[0m  [1m[34mSELECT COUNT(*) FROM "users" INNER JOIN "relationships" ON "users"."id" = "relationships"."followed_id" WHERE "relationships"."follower_id" = ?[0m  [["follower_id", 2]]
+  ↳ app/views/users/_info.html.erb:13
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "users" INNER JOIN "relationships" ON "users"."id" = "relationships"."follower_id" WHERE "relationships"."followed_id" = ?[0m  [["followed_id", 2]]
+  ↳ app/views/users/_info.html.erb:17
+  Rendered users/_info.html.erb (9.9ms)
+  Rendered layouts/_errors.html.erb (0.0ms)
+  Rendered books/_form.html.erb (6.9ms)
+  [1m[36mGroup Load (0.1ms)[0m  [1m[34mSELECT "groups".* FROM "groups"[0m
+  ↳ app/views/groups/index.html.erb:23
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "users" INNER JOIN "group_users" ON "users"."id" = "group_users"."user_id" WHERE "group_users"."group_id" = ?[0m  [["group_id", 3]]
+  ↳ app/views/groups/index.html.erb:28
+  Rendered groups/index.html.erb within layouts/application (34.1ms)
+  Rendered layouts/_header.html.erb (6.0ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 206ms (Views: 198.1ms | ActiveRecord: 4.6ms)
+
+
+Started GET "/groups/3" for 27.139.43.99 at 2021-06-07 04:30:16 +0000
+Cannot render console from 27.139.43.99! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by GroupsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.6/lib/active_record/log_subscriber.rb:98
+  [1m[36mGroup Load (0.1ms)[0m  [1m[34mSELECT  "groups".* FROM "groups" WHERE "groups"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/groups_controller.rb:12
+  Rendering groups/show.html.erb within layouts/application
+  Rendered layouts/_errors.html.erb (0.3ms)
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "users" INNER JOIN "relationships" ON "users"."id" = "relationships"."followed_id" WHERE "relationships"."follower_id" = ?[0m  [["follower_id", 2]]
+  ↳ app/views/users/_info.html.erb:13
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "users" INNER JOIN "relationships" ON "users"."id" = "relationships"."follower_id" WHERE "relationships"."followed_id" = ?[0m  [["followed_id", 2]]
+  ↳ app/views/users/_info.html.erb:17
+  Rendered users/_info.html.erb (6.5ms)
+  Rendered layouts/_errors.html.erb (0.0ms)
+  Rendered books/_form.html.erb (2.9ms)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "group_users" ON "users"."id" = "group_users"."user_id" WHERE "group_users"."group_id" = ?[0m  [["group_id", 3]]
+  ↳ app/views/groups/show.html.erb:26
+  Rendered groups/show.html.erb within layouts/application (17.3ms)
+  Rendered layouts/_header.html.erb (1.0ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 165ms (Views: 158.9ms | ActiveRecord: 0.6ms)
+
+
+Started DELETE "/groups/3" for 27.139.43.99 at 2021-06-07 04:31:57 +0000
+Cannot render console from 27.139.43.99! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by GroupsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"BhQ8d/UXZ5rZkuMmErx6vhczpVZyONU93KTHqMqD2s0/MLZVJsM1TEqx7DWwf5wyrhCGePXlI6jlot+IPztTgg==", "id"=>"3"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.6/lib/active_record/log_subscriber.rb:98
+  [1m[36mGroup Load (0.1ms)[0m  [1m[34mSELECT  "groups".* FROM "groups" WHERE "groups"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/groups_controller.rb:47
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/groups_controller.rb:48
+  [1m[36mGroupUser Destroy (4.3ms)[0m  [1m[31mDELETE FROM "group_users" WHERE "group_users"."group_id" = ? AND "group_users"."user_id" = ?[0m  [["group_id", 3], ["user_id", 2]]
+  ↳ app/controllers/groups_controller.rb:48
+  [1m[35m (5.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/groups_controller.rb:48
+Redirected to https://7d0ee2c198f5476cbb69bdd91b6647a9.vfs.cloud9.us-east-1.amazonaws.com/groups
+Completed 302 Found in 57ms (ActiveRecord: 11.4ms)
+
+
+Started GET "/groups" for 27.139.43.99 at 2021-06-07 04:31:57 +0000
+Cannot render console from 27.139.43.99! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by GroupsController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.6/lib/active_record/log_subscriber.rb:98
+  Rendering groups/index.html.erb within layouts/application
+  Rendered layouts/_errors.html.erb (0.4ms)
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "users" INNER JOIN "relationships" ON "users"."id" = "relationships"."followed_id" WHERE "relationships"."follower_id" = ?[0m  [["follower_id", 2]]
+  ↳ app/views/users/_info.html.erb:13
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "users" INNER JOIN "relationships" ON "users"."id" = "relationships"."follower_id" WHERE "relationships"."followed_id" = ?[0m  [["followed_id", 2]]
+  ↳ app/views/users/_info.html.erb:17
+  Rendered users/_info.html.erb (9.8ms)
+  Rendered layouts/_errors.html.erb (0.0ms)
+  Rendered books/_form.html.erb (2.9ms)
+  [1m[36mGroup Load (0.1ms)[0m  [1m[34mSELECT "groups".* FROM "groups"[0m
+  ↳ app/views/groups/index.html.erb:23
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "users" INNER JOIN "group_users" ON "users"."id" = "group_users"."user_id" WHERE "group_users"."group_id" = ?[0m  [["group_id", 3]]
+  ↳ app/views/groups/index.html.erb:28
+  Rendered groups/index.html.erb within layouts/application (30.7ms)
+  Rendered layouts/_header.html.erb (1.0ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 164ms (Views: 148.7ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/groups/3" for 27.139.43.99 at 2021-06-07 04:31:59 +0000
+Cannot render console from 27.139.43.99! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by GroupsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.6/lib/active_record/log_subscriber.rb:98
+  [1m[36mGroup Load (0.1ms)[0m  [1m[34mSELECT  "groups".* FROM "groups" WHERE "groups"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/groups_controller.rb:12
+  Rendering groups/show.html.erb within layouts/application
+  Rendered layouts/_errors.html.erb (0.4ms)
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "users" INNER JOIN "relationships" ON "users"."id" = "relationships"."followed_id" WHERE "relationships"."follower_id" = ?[0m  [["follower_id", 2]]
+  ↳ app/views/users/_info.html.erb:13
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "users" INNER JOIN "relationships" ON "users"."id" = "relationships"."follower_id" WHERE "relationships"."followed_id" = ?[0m  [["followed_id", 2]]
+  ↳ app/views/users/_info.html.erb:17
+  Rendered users/_info.html.erb (8.7ms)
+  Rendered layouts/_errors.html.erb (0.0ms)
+  Rendered books/_form.html.erb (2.8ms)
+  [1m[36mUser Load (2.4ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "group_users" ON "users"."id" = "group_users"."user_id" WHERE "group_users"."group_id" = ?[0m  [["group_id", 3]]
+  ↳ app/views/groups/show.html.erb:26
+  Rendered groups/show.html.erb within layouts/application (27.8ms)
+  Rendered layouts/_header.html.erb (1.0ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 218ms (Views: 210.8ms | ActiveRecord: 2.9ms)
+
+
+Started GET "/groups/3/join" for 27.139.43.99 at 2021-06-07 04:32:00 +0000
+Cannot render console from 27.139.43.99! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by GroupsController#join as HTML
+  Parameters: {"group_id"=>"3"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.6/lib/active_record/log_subscriber.rb:98
+  [1m[36mGroup Load (0.1ms)[0m  [1m[34mSELECT  "groups".* FROM "groups" WHERE "groups"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/groups_controller.rb:30
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/groups_controller.rb:31
+  [1m[36mGroupUser Create (3.5ms)[0m  [1m[32mINSERT INTO "group_users" ("user_id", "group_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["user_id", 2], ["group_id", 3], ["created_at", "2021-06-07 04:32:00.942941"], ["updated_at", "2021-06-07 04:32:00.942941"]]
+  ↳ app/controllers/groups_controller.rb:31
+  [1m[35m (4.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/groups_controller.rb:31
+Redirected to https://7d0ee2c198f5476cbb69bdd91b6647a9.vfs.cloud9.us-east-1.amazonaws.com/groups
+Completed 302 Found in 25ms (ActiveRecord: 8.8ms)
+
+
+Started GET "/groups" for 27.139.43.99 at 2021-06-07 04:32:01 +0000
+Cannot render console from 27.139.43.99! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by GroupsController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.6/lib/active_record/log_subscriber.rb:98
+  Rendering groups/index.html.erb within layouts/application
+  Rendered layouts/_errors.html.erb (0.3ms)
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "users" INNER JOIN "relationships" ON "users"."id" = "relationships"."followed_id" WHERE "relationships"."follower_id" = ?[0m  [["follower_id", 2]]
+  ↳ app/views/users/_info.html.erb:13
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "users" INNER JOIN "relationships" ON "users"."id" = "relationships"."follower_id" WHERE "relationships"."followed_id" = ?[0m  [["followed_id", 2]]
+  ↳ app/views/users/_info.html.erb:17
+  Rendered users/_info.html.erb (6.3ms)
+  Rendered layouts/_errors.html.erb (0.0ms)
+  Rendered books/_form.html.erb (2.8ms)
+  [1m[36mGroup Load (0.1ms)[0m  [1m[34mSELECT "groups".* FROM "groups"[0m
+  ↳ app/views/groups/index.html.erb:23
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "users" INNER JOIN "group_users" ON "users"."id" = "group_users"."user_id" WHERE "group_users"."group_id" = ?[0m  [["group_id", 3]]
+  ↳ app/views/groups/index.html.erb:28
+  Rendered groups/index.html.erb within layouts/application (19.0ms)
+  Rendered layouts/_header.html.erb (0.9ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 188ms (Views: 184.8ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/groups/3" for 27.139.43.99 at 2021-06-07 04:32:02 +0000
+Cannot render console from 27.139.43.99! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by GroupsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.6/lib/active_record/log_subscriber.rb:98
+  [1m[36mGroup Load (0.1ms)[0m  [1m[34mSELECT  "groups".* FROM "groups" WHERE "groups"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/groups_controller.rb:12
+  Rendering groups/show.html.erb within layouts/application
+  Rendered layouts/_errors.html.erb (0.4ms)
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "users" INNER JOIN "relationships" ON "users"."id" = "relationships"."followed_id" WHERE "relationships"."follower_id" = ?[0m  [["follower_id", 2]]
+  ↳ app/views/users/_info.html.erb:13
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "users" INNER JOIN "relationships" ON "users"."id" = "relationships"."follower_id" WHERE "relationships"."followed_id" = ?[0m  [["followed_id", 2]]
+  ↳ app/views/users/_info.html.erb:17
+  Rendered users/_info.html.erb (6.7ms)
+  Rendered layouts/_errors.html.erb (0.0ms)
+  Rendered books/_form.html.erb (3.0ms)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "group_users" ON "users"."id" = "group_users"."user_id" WHERE "group_users"."group_id" = ?[0m  [["group_id", 3]]
+  ↳ app/views/groups/show.html.erb:26
+  Rendered groups/show.html.erb within layouts/application (18.2ms)
+  Rendered layouts/_header.html.erb (1.0ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 138ms (Views: 131.4ms | ActiveRecord: 0.6ms)
+
+
+Started DELETE "/groups/3" for 27.139.43.99 at 2021-06-07 04:32:04 +0000
+Cannot render console from 27.139.43.99! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by GroupsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"nrN3ZGD5tyf5ktVP3GghM1gHqdDyeupU9z+z+aRfCmCnl/1Gsy3l8Wqx2lx+q8e/4SSK/nWnHMHOOavZUeeDLw==", "id"=>"3"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.6/lib/active_record/log_subscriber.rb:98
+  [1m[36mGroup Load (0.1ms)[0m  [1m[34mSELECT  "groups".* FROM "groups" WHERE "groups"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/groups_controller.rb:47
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/groups_controller.rb:48
+  [1m[36mGroupUser Destroy (2.3ms)[0m  [1m[31mDELETE FROM "group_users" WHERE "group_users"."group_id" = ? AND "group_users"."user_id" = ?[0m  [["group_id", 3], ["user_id", 2]]
+  ↳ app/controllers/groups_controller.rb:48
+  [1m[35m (5.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/groups_controller.rb:48
+Redirected to https://7d0ee2c198f5476cbb69bdd91b6647a9.vfs.cloud9.us-east-1.amazonaws.com/groups
+Completed 302 Found in 17ms (ActiveRecord: 7.7ms)
+
+
+Started GET "/groups" for 27.139.43.99 at 2021-06-07 04:32:05 +0000
+Cannot render console from 27.139.43.99! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by GroupsController#index as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.6/lib/active_record/log_subscriber.rb:98
+  Rendering groups/index.html.erb within layouts/application
+  Rendered layouts/_errors.html.erb (0.4ms)
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "users" INNER JOIN "relationships" ON "users"."id" = "relationships"."followed_id" WHERE "relationships"."follower_id" = ?[0m  [["follower_id", 2]]
+  ↳ app/views/users/_info.html.erb:13
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "users" INNER JOIN "relationships" ON "users"."id" = "relationships"."follower_id" WHERE "relationships"."followed_id" = ?[0m  [["followed_id", 2]]
+  ↳ app/views/users/_info.html.erb:17
+  Rendered users/_info.html.erb (6.4ms)
+  Rendered layouts/_errors.html.erb (0.0ms)
+  Rendered books/_form.html.erb (3.0ms)
+  [1m[36mGroup Load (0.1ms)[0m  [1m[34mSELECT "groups".* FROM "groups"[0m
+  ↳ app/views/groups/index.html.erb:23
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "users" INNER JOIN "group_users" ON "users"."id" = "group_users"."user_id" WHERE "group_users"."group_id" = ?[0m  [["group_id", 3]]
+  ↳ app/views/groups/index.html.erb:28
+  Rendered groups/index.html.erb within layouts/application (19.4ms)
+  Rendered layouts/_header.html.erb (0.9ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 145ms (Views: 141.3ms | ActiveRecord: 1.1ms)
+
+
